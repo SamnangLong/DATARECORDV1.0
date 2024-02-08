@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+
+/* CONTAINNER */
+.containner {
+    height: 940px;
+    width: 1920px;
+    padding-top: 10px;
+    background: linear-gradient(90deg, #ABDCFF, #0396FF, #ABDCFF);
+    display: block;
+    justify-content: center;
+    align-content: center;
+}
+
+/* -TOPBAR- */
+.containner .header {
+    height: 53px;
+    width: 1920px;
+    text-align: center;
+    margin: auto;
+    padding-top: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #030880;
+}
+
+
+/* -CONTAIN BODY- */
+.containner .body {
+    margin-top: 13px;
+    height: 820px;
+    width: 1920px;
+    /* background-color: green; */
+}
+
+
+/* --VFD-- */
+.body .VFD {
+    height: 405px;
+    width: 1920px;
+    /* background-color: blueviolet; */
+}
+.vfd_title {
+    height: 35px;
+    width: 1920px;
+    padding-top: 2px;
+    display: block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 2px;
+    background-color: #030880;
+}
+
+/* --DOL-- */
+.body .DOL {
+    height: 405px;
+    width: 1920px;
+    margin-top: 10px;
+    /* background-color: blueviolet; */
+}
+.dol_title {
+    height: 35px;
+    width: 1920px;
+    padding-top: 2px;
+    display: block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 2px;
+    background-color: #030880;
+}
+
+
+.day {
+    height: 366px;
+    width: 270px;
+    float: left;
+    /* background-color: deepskyblue; */
+}
+.day .title {
+    height: 25px;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-top: 3px;
+    background-color: #030880;
+}
+.day .data .rows{
+    float: left;
+}
+#day_one {
+    background-color: deeppink;
+}
+#day_two {
+    margin-left: 5px;
+    background-color: deeppink;
+}
+#day_three {
+    margin-left: 5px;
+    background-color: deeppink;
+}
+#day_four {
+    margin-left: 5px;
+    background-color: deeppink;
+}
+#day_five {
+    margin-left: 5px;
+    background-color: deeppink;
+}
+#day_six {
+    margin-left: 5px;
+    background-color: deeppink;
+}
+#day_seven {
+    margin-left: 5px;
+    background-color: deeppink;
+}
+
+/* -CONTAIN FOOTER- */
+.containner .footer {
+    height: 32px;
+    width: 1920px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+    background-color: #030880;
+}

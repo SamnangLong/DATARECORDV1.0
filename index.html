@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VFD DATA RECORD</title>
+    <link rel="icon" href="KINTEK.jpg">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+    <script src="JS/script.js"></script>
+</head>
+<body>
+    <div class="containner">
+        <div class="header">
+            <h1 id="title_data_record">DATA RECORD</h1>
+        </div>
+
+
+        <div class="body">
+            <div class="VFD">
+                <div class="vfd_title">
+                    <h2>Using VFD</h2>
+                </div>
+                <div class="day" id="day_one">
+                    <div class="title">
+                        <h2 id="label_day1">day1</h2>
+                    </div>
+                    <div class="data">
+                        <div class="rows">
+                            <textarea id="rows_V11" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V12" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V13" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V14" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V15" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V16" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="day" id="day_two">
+                    <div class="title">
+                        <h2 id="label_day2">day2</h2>
+                    </div>
+                    <div class="data">
+                        <div class="rows">
+                            <textarea id="rows_V21" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V22" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V23" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V24" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V25" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V26" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                    </div></div>
+                <div class="day" id="day_three">
+                    <div class="title">
+                        <h2 id="label_day3">day3</h2>
+                    </div>
+                    <div class="data">
+                        <div class="rows">
+                            <textarea id="rows_V31" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V32" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V33" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V34" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V35" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V36" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                    </div></div>
+                <div class="day" id="day_four">
+                    <div class="title">
+                        <h2 id="label_day4">day4</h2>
+                    </div>
+                    <div class="data">
+                        <div class="rows">
+                            <textarea id="rows_V41" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V42" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V43" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V44" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V45" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V46" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                    </div></div>
+                <div class="day" id="day_five">
+                    <div class="title">
+                        <h2 id="label_day5">day5</h2>
+                    </div>
+                    <div class="data">
+                        <div class="rows">
+                            <textarea id="rows_V51" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V52" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V53" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V54" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V55" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V56" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                    </div></div>
+                <div class="day" id="day_six">
+                    <div class="title">
+                        <h2 id="label_day6">day6</h2>
+                    </div>
+                    <div class="data">
+                        <div class="rows">
+                            <textarea id="rows_V61" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V62" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V63" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V64" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V65" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V66" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                    </div></div>
+                <div class="day" id="day_seven">
+                    <div class="title">
+                        <h2 id="label_day7">day7</h2>
+                    </div>
+                    <div class="data">
+                        <div class="rows">
+                            <textarea id="rows_V71" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V72" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V73" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V74" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V75" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_V76" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                    </div></div>
+            </div>
+            <div class="DOL">
+                <div class="dol_title">
+                    <h2>Using DOL</h2>
+                </div>
+                <div class="day" id="day_one">
+                    <div class="title">
+                        <h2 id="label_day1">day1</h2>
+                    </div>
+                    <div class="data">
+                        <div class="rows">
+                            <textarea id="rows_D11" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D12" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D13" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D14" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D15" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D16" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="day" id="day_two">
+                    <div class="title">
+                        <h2 id="label_day2">day2</h2>
+                    </div>
+                    <div class="data">
+                        <div class="rows">
+                            <textarea id="rows_D21" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D22" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D23" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D24" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D25" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D26" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                    </div></div>
+                <div class="day" id="day_three">
+                    <div class="title">
+                        <h2 id="label_day3">day3</h2>
+                    </div>
+                    <div class="data">
+                        <div class="rows">
+                            <textarea id="rows_D31" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D32" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D33" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D34" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D35" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D36" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                    </div></div>
+                <div class="day" id="day_four">
+                    <div class="title">
+                        <h2 id="label_day4">day4</h2>
+                    </div>
+                    <div class="data">
+                        <div class="rows">
+                            <textarea id="rows_D41" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D42" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D43" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D44" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D45" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D46" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                    </div></div>
+                <div class="day" id="day_five">
+                    <div class="title">
+                        <h2 id="label_day5">day5</h2>
+                    </div>
+                    <div class="data">
+                        <div class="rows">
+                            <textarea id="rows_D51" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D52" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D53" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D54" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D55" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D56" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                    </div></div>
+                <div class="day" id="day_six">
+                    <div class="title">
+                        <h2 id="label_day6">day6</h2>
+                    </div>
+                    <div class="data">
+                        <div class="rows">
+                            <textarea id="rows_D61" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D62" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D63" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D64" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D65" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D66" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                    </div></div>
+                <div class="day" id="day_seven">
+                    <div class="title">
+                        <h2 id="label_day7">day7</h2>
+                    </div>
+                    <div class="data">
+                        <div class="rows">
+                            <textarea id="rows_D71" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D72" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D73" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D74" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D75" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                        <div class="rows">
+                            <textarea id="rows_D76" readonly style="width: 43px; resize: none; height: 335.5px; background-color: azure; overflow: hidden; text-align: center; font-family: Arial; font-size: 12px; color: black;" disabled></textarea>
+                        </div>
+                    </div></div>
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <h3>POWER BY: KINTEK</h3>
+        </div>
+    </div>
+</body>
+</html>
